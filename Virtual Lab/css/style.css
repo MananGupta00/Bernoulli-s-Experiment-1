@@ -1,0 +1,220 @@
+@import 'utilies.css';
+
+:root {
+    --primary:#7bf1a2;
+    --dark:#161616;
+    --pure:#fd9090;
+    --ternary:#a89494;
+    --light:#f5eeee;
+    --secondary:#ffbebe;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+/* header{
+    padding-left: 12.5rem
+} */
+body{
+    padding-left: 12rem;
+    font-family: Arial;
+}
+.container{
+    max-width: 1152px;
+    padding:0 15px;
+    margin:0;
+    background-color: var(--pure);
+}
+
+.title {
+    width: 1152px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    background-color:var(--primary);
+    float: left;
+    border-right: 1px solid var(--dark);
+  }
+  
+.title .pg {
+    flex:1;
+    color: var(--ternary);
+    text-align: center;
+    font-size:1rem;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+.title button:hover {
+    background-color: var(--primary);
+    border: none;
+    color:var(--dark);
+  }
+.title .pg #last {
+    float: right;
+    border-left: 1px solid var(--dark);
+    border-right: none;
+  }
+
+header nav .left a{
+    color: var(--dark);
+    text-decoration: none;
+    margin-right:2rem ;
+    text-transform:uppercase;
+    transition: all .3s ease;
+}
+.tab-content{
+    width: 1152px;
+}
+
+header nav .left a:hover{
+    color:var(--primary);
+}
+.heading{
+    color:var(--dark);
+    font-size: 1.8rem;
+    font-family: Comic sans MS, Courie;
+    font-weight: 600;
+}
+.title button.active{
+    background: var(--primary);
+    border:none;
+}
+
+header nav {
+    padding:2rem 0;
+}
+
+header nav .branding{
+   margin-right:3rem ;
+}
+
+.branding img{
+    width : 10.5rem;
+    height: 4rem;
+}
+footer {
+    max-width: 1152px;
+    background-color:var(--pure);
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+   margin-top: 3rem;
+   color:var(--dark); 
+  }
+
+.left{
+    margin-left: 0;
+}
+
+.right {
+    padding-top: 10px;
+    float:right;
+}
+#home h1{
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    font-family: Comic sans MS;
+}
+#home #theory{
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    width:65rem;
+    height: auto;
+    border: 1px solid var(--ternary);
+    background: var(--secondary);
+    padding: 5rem 5rem;
+}
+#theory img{
+    padding-left: 15rem;
+}
+#verify{
+    width:65rem;
+    margin-top:1.5rem;
+    margin-left: 3rem;
+    height: auto;
+    border: 1px solid var(--ternary);
+    background: var(--secondary);
+    padding: 5rem 5rem;
+}
+#verify #ans {
+    background-color: var(--primary);
+    border: none;
+    color:var(--dark);
+    width:8rem;
+    height: 3rem;
+    border: 1px solid var(--dark);
+}
+#verify #ans:hover{
+    background: var(--light);
+    color:var(--dark);
+    transition: all .3s ease;
+}
+#verification h1{
+    margin-left: 2rem;
+    margin-top: 3rem;
+    font-family: Comic sans MS;
+}
+#simulate {
+    position: relative;
+    height: 600px;
+    width: 800px;
+    border: 2px black solid;
+    background-image: url("../drawing.svg");
+    background-size: 100%;
+}
+#simulate {
+    width:65rem;
+    margin-top:1.5rem;
+    margin-left: 3rem;
+    height: auto;
+    border: 1px solid var(--ternary);
+    background: var(--secondary);
+    padding: 5rem 5rem;
+}
+#simulate #start{
+    background-color: var(--primary);
+    margin-left:3rem;
+    margin-top: 3rem;
+    border: none;
+    color:var(--dark);
+    width:8rem;
+    height: 3rem;
+    border: 1px solid var(--dark);
+}
+#simulate #start:hover{
+    background: var(--light);
+    color:var(--dark);
+    transition: all .3s ease;
+}
+#Simulator h1{
+    margin-left: 2rem;
+    margin-top: 3rem;
+    font-family: Comic sans MS;
+}
+.table-2{
+    background: var(--light);
+}
+.table-1{
+    background: var(--light);
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #0a0a0a;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #c6fff3;
+  }

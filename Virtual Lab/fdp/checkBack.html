@@ -1,0 +1,208 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <style>
+      #struct {
+        position: relative;
+        height: 600px;
+        width: 800px;
+        border: 2px black solid;
+
+        background-image: url("drawing.svg");
+        background-size: 100%;
+      }
+      .valve {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+
+        border: none;
+        background-color: transparent;
+        background-image: url("valve.svg");
+        background-size: 100%;
+        transition-property: transform;
+        transition-duration: 1s;
+        outline: none;
+      }
+      #outlet {
+        top: 233px;
+        left: 590px;
+      }
+      #motbut {
+        top: 500px;
+        left: 170px;
+      }
+      #gatebut {
+        top: 395px;
+        left: 570px;
+      }
+      label {
+        position: absolute;
+      }
+      #labFlow {
+        top: 290px;
+        left: 710px;
+      }
+      #timer {
+        top: 50px;
+        left: 720px;
+        font-size: 28px;
+      }
+      #piezoDiv {
+        position: absolute;
+        top: 3px;
+        left: 250px;
+        font-size: 10px;
+        font-weight: bold;
+      }
+      #shower {
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        width: 60px;
+        height: 100px;
+        background-image: url("shower.gif");
+        background-size: 100%;
+      }
+      .horz-water {
+        position: absolute;
+        background-image: url("water-horizintal.gif");
+      }
+      #mot1 {
+        top: 495px;
+        left: 40px;
+        width: 80px;
+        height: 25px;
+        background-size: 120%;
+      }
+      #mot13 {
+        top: 55px;
+        left: 40px;
+        width: 150px;
+        height: 25px;
+        background-size: 30%;
+      }
+      #mot2 {
+        top: 470px;
+        left: 40px;
+        width: 20px;
+        height: 40px;
+        background-size: 320%;
+      }
+      #mot3 {
+        top: 430px;
+        left: 40px;
+        width: 20px;
+        height: 40px;
+        background-size: 320%;
+      }
+      #mot4 {
+        top: 390px;
+        left: 40px;
+        width: 20px;
+        height: 40px;
+        background-size: 320%;
+      }
+      #mot5 {
+        top: 350px;
+        left: 40px;
+        width: 20px;
+        height: 40px;
+        background-size: 320%;
+      }
+      #mot6 {
+        top: 310px;
+        left: 40px;
+        width: 20px;
+        height: 40px;
+        background-size: 320%;
+      }
+      #mot7 {
+        top: 270px;
+        left: 40px;
+        width: 20px;
+        height: 40px;
+        background-size: 320%;
+      }
+      #mot8 {
+        top: 230px;
+        left: 40px;
+        width: 20px;
+        height: 40px;
+        background-size: 320%;
+      }
+      #mot9 {
+        top: 190px;
+        left: 40px;
+        width: 20px;
+        height: 40px;
+        background-size: 320%;
+      }
+      #mot10 {
+        top: 150px;
+        left: 40px;
+        width: 20px;
+        height: 40px;
+        background-size: 320%;
+      }
+      #mot11 {
+        top: 110px;
+        left: 40px;
+        width: 20px;
+        height: 40px;
+        background-size: 320%;
+      }
+      #mot12 {
+        top: 60px;
+        left: 40px;
+        width: 20px;
+        height: 80px;
+        background-size: 320%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="struct">
+        <div id="piezoDiv">
+          <label id="h1"></label><br />
+          <label id="h2"></label><br />
+          <label id="h3"></label><br />
+          <label id="h4"></label><br />
+          <label id="h5"></label><br />
+          <label id="h6"></label><br />
+          <label id="h7"></label><br />
+          <label id="h8"></label><br />
+          <label id="h9"></label><br />
+          <label id="h10"></label><br />
+          <label id="h11" class="peizo"></label>
+        </div>
+        <label id="timer"></label>
+        <label id="labFlow"></label>
+        <div id="shower"></div>
+        ,
+        <div id="mot1" class="horz-water"></div>
+        <div id="mot13" class="horz-water"></div>
+        <!--horizontal-->
+
+        <div id="mot2" class="horz-water"></div>
+        <div id="mot3" class="horz-water"></div>
+        <div id="mot4" class="horz-water"></div>
+        <div id="mot5" class="horz-water"></div>
+        <div id="mot6" class="horz-water"></div>
+        <div id="mot7" class="horz-water"></div>
+        <div id="mot8" class="horz-water"></div>
+        <div id="mot9" class="horz-water"></div>
+        <div id="mot10" class="horz-water"></div>
+        <div id="mot11" class="horz-water"></div>
+        <div id="mot12" class="horz-water"></div>
+
+        <button id="outlet" class="valve" onclick="clickedValve()"></button>
+        <button id="gatebut" class="valve" onclick="clickedgate()"></button>
+        <button id="motbut" class="valve" onclick="clickedMot()"></button>
+      </div>
+    </div>
+    <script src="valve.js"></script>
+  </body>
+</html>

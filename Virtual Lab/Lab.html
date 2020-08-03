@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lab</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="flex items-center justify-betwween">
+                <div class="left flex items-center">
+                    <div class="branding">
+                        <img src="./images/logo.png">
+                    </div>
+                    <div class="heading">
+                        <h2>
+                            Bernoulli’s Experiment!
+                        </h2>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="title">
+            <button class="pg" id = 'h' onclick="openTab(event,'home','h')">Home</button>
+            <!-- <button class="pg" id = 't' onclick="openTab(event,'theory','t')">Theory</button> -->
+            <button class="pg" id = 'v' onclick="openTab(event,'verification','v')">Verfication</button>
+            <button class="pg" id = 's' onclick="openTab(event,'Simulator','s')">Go to Lab</button>
+        </div>
+    </header>
+    <div class="tab-content" id="home">
+        <h1>Home</h1>
+        <div id="theory">
+            <h2>THEORY</h2><br/>
+            <p>Bernoulli’s equation states that:<br/>
+                “In an ideal, incompressible fluid flow when the flow is steady and continuous, the sum of
+                pressure energy, kinetic energy and potential energy is constant along a stream line”.</p><br/>
+                <h4>Mathematical Representation,</h4><br/>
+                <img src="images/img1.png"><br/><br/>
+                <p><span>Assumptions:</span> It may be mentioned that the following assumptions are made in the derivation of
+                    Bernoulli’s equation.<br/>
+                    1. The liquid is ideal and incompressible.<br/>
+                    2. The flow is steady and continuous.<br/>
+                    3. The flow is along the streamline, i.e. it is one-dimensional.<br/>
+                    4. The velocity is uniform over the section and is equal to the mean velocity.<br/>
+                    5. The only forces acting on the fluid are the gravity forces and the pressure forces.<br/></p><br/>
+
+                <h3>Rate of flow or Actual Discharge (Q):</h3><br/>
+                <p>The water flowing through the section of a pipe or a channel under the steady state conditions is
+                    collected in a collecting tank for a known time t. The rise of water level in the collecting tank is
+                    noted down. The actual discharge is</p><br/>
+                    <img src="images/img2.png"><br/><br/>
+                <h3>Experimental set up:</h3><br/>
+                <p>The experimental set up consists of a horizontal Perspex duct of smooth variable cross-section of
+                    convergent and divergent type. The section is 40 mm x 40 mm at the entrance and exit and 40
+                    mm x 20 mm at middle. The total length of duct is 900 mm. The piezometric pressure P at the
+                    locations of pressure tapping is measured by means of 11 piezometer tubes installed at an equal
+                    distance 75 mm along the length of conduit. The duct is connected with supply tanks at its
+                    entrance and exit end with means of varying the flow rate. A collecting tank is used to find the
+                    actual discharge.</p><br/>
+
+                <h3>PROCEDURE:</h3><br/>
+                <p>1. Note down the piezometers distance from inlet section of the Perspex duct.<br/>
+                    2. Note down the cross-sectional area of Perspex duct at each of the piezpmeter tapping
+                    points.<br/>
+                    3. The datum head is treated as constant through out the duct.<br/>
+                    4. By maintaining suitable amount of steady head or near by steady head conditions in the
+                    supply tanks there establish a steady non-uniform flow in the conduit.<br/>
+                    5. The discharge flowing in the conduit is recorded together with the water levels in each
+                    piezometer tubes.<br/>
+                    6. This procedure is repeated for other value of discharge.<br/></p><br/>
+                <h3>PRECAUTIONS:</h3><br/>
+                <p>
+                    1. Apparatus should be in leveled conditions.<br/>
+                    2. Reading must be taken in steady or near by steady conditions and it should be noted that
+                    water level in the inlet supply tank should reach the overflow condition.<br/>
+                    3. There should not be any air bubble in the piezometer and in the Perspex duct.<br/>
+                    4. By closing the regulating valve, open the control valve slightly such that the water level
+                    in the inlet supply tank reaches the overflow conditions. At this stage check that pressure
+                    head in each piezometer tube is equal. If not adjust the piezometers to bring it equals.<br/>
+                </p>
+        </div>
+    </div>
+    <!-- <div class="tab-content" id="theory">
+        <h1>Theroy</h1>
+    </div> -->
+    <div class="tab-content" id="verification">
+        <h1>Verification of Bernoulli’s Theorem</h1>
+        <div id="verify">
+            <div id="solve">
+                <h3>AIM :</h3><br/>
+                <p>To verify the Bernoulli’s theorem experimentally i.e. conservation of mechanical energy.</p><br/>
+                <h3>DATA</h3><br/>
+                <p>
+                    Distance between two consecutive piezometer tube = 7.5 cm<br/>
+                    Area of collecting tanks = 1600 cm 2<br/>
+                    Area of inlet and outlet section of Perspex duct = 16 cm 2<br/>
+                    Area of c/s of Perspex duct at piezometer number 1 and 11 = 4.0 x 3.6 = 14.4 cm 2<br/>
+                    Area of c/s of Perspex duct at piezometer number 2 and 10 = 4.0 x 3.3 = 13.2 cm 2<br/>
+                    Area of c/s of Perspex duct at piezometer number 3 and 9 = 4.0 x 3.0 = 12.0 cm 2<br/>
+                    Area of c/s of Perspex duct at piezometer number 4 and 8 = 4.0 x 2.7 = 10.8 cm 2<br/>
+                    Area of c/s of Perspex duct at piezometer number 5 and 7 = 4.0 x 2.3 = 9.2 cm 2<br/>
+                    Area of c/s of Perspex duct at piezometer number 6 = 4.0 x 2.0 = 8.0 cm 2<br/>
+                </p><br/>
+                <h3>DATA SHEET</h3><br/>
+                <div class="table-1">
+                    <table>
+                        <tr>
+                            <th rowspan="2">SNo.</th>
+                            <th colspan="3">Discharge Measure</th>
+                            <th rowspan="2">Discharge Q (cm3/sec)</th>
+                            <th colspan="11">Piezometer Reading</th>
+                        </tr>
+                        <tr>
+                            <td id="dm">Initial (cm)</td>
+                            <td id="dm">Final (cm)</td>
+                            <td id="dm">Time (sec)</td>
+                            <td id="pm">1</td>
+                            <td id="pm">2</td>
+                            <td id="pm">3</td>
+                            <td id="pm">4</td>
+                            <td id="pm">5</td>
+                            <td id="pm">6</td>
+                            <td id="pm">7</td>
+                            <td id="pm">8</td>
+                            <td id="pm">9</td>
+                            <td id="pm">10</td>
+                            <td id="pm">11</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td id="dm11"></td>
+                            <td id="dm12"></td>
+                            <td id="dm13"></td>
+                            <td id="ds1"></td>
+                            <td id="pm11"></td>
+                            <td id="pm12"></td>
+                            <td id="pm13"></td>
+                            <td id="pm14"></td>
+                            <td id="pm15"></td>
+                            <td id="pm16"></td>
+                            <td id="pm17"></td>
+                            <td id="pm18"></td>
+                            <td id="pm19"></td>
+                            <td id="pm110"></td>
+                            <td id="pm111"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="dm21"></td>
+                            <td id="dm22"></td>
+                            <td id="dm23"></td>
+                            <td id="ds2"></td>
+                            <td id="pm21"></td>
+                            <td id="pm22"></td>
+                            <td id="pm23"></td>
+                            <td id="pm24"></td>
+                            <td id="pm25"></td>
+                            <td id="pm26"></td>
+                            <td id="pm27"></td>
+                            <td id="pm28"></td>
+                            <td id="pm29"></td>
+                            <td id="pm210"></td>
+                            <td id="pm211"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="dm31"></td>
+                            <td id="dm32"></td>
+                            <td id="dm33"></td>
+                            <td id="ds3"></td>
+                            <td id="pm31"></td>
+                            <td id="pm32"></td>
+                            <td id="pm33"></td>
+                            <td id="pm34"></td>
+                            <td id="pm35"></td>
+                            <td id="pm36"></td>
+                            <td id="pm37"></td>
+                            <td id="pm38"></td>
+                            <td id="pm39"></td>
+                            <td id="pm310"></td>
+                            <td id="pm311"></td>
+                        </tr>
+                    </table>
+                    </div><br/><br/>
+                    <div class="table-2">
+                    <table>
+                        <tr>
+                            <th>SNo.</th>
+                            <th>Distance from the inlet section(cm)</th>
+                            <th>Area of c/s conduit A in cm2</th>
+                            <th>Velocity of flow V=Q/A(cm/sec)</th>
+                            <th>V2/(2*g) cm</th>
+                            <th>P/w+Z (cm)</th>
+                            <th>P/w+Z+V2/(2*g) cm</th>
+                        </tr>
+                        <tr id="1">
+                            <td id="11">1</td>
+                            <td id="12"></td>
+                            <td id="13"></td>
+                            <td id="14"></td>
+                            <td id="15"></td>
+                            <td id="16"></td>
+                            <td id="17"></td>
+                        </tr>
+                        <tr id="2">
+                            <td id="21">2</td>
+                            <td id="22"></td>
+                            <td id="23"></td>
+                            <td id="24"></td>
+                            <td id="25"></td>
+                            <td id="26"></td>
+                            <td id="27"></td>
+                        </tr>
+                        <tr id="3">
+                            <td id="31">3</td>
+                            <td id="32"></td>
+                            <td id="33"></td>
+                            <td id="34"></td>
+                            <td id="35"></td>
+                            <td id="36"></td>
+                            <td id="37"></td>
+                        </tr>
+                        <tr id="4">
+                            <td id="41">4</td>
+                            <td id="42"></td>
+                            <td id="43"></td>
+                            <td id="44"></td>
+                            <td id="45"></td>
+                            <td id="46"></td>
+                            <td id="47"></td>
+                        </tr>
+                        <tr id="5">
+                            <td id="51">5</td>
+                            <td id="52"></td>
+                            <td id="53"></td>
+                            <td id="54"></td>
+                            <td id="55"></td>
+                            <td id="56"></td>
+                            <td id="57"></td>
+                        </tr>
+                        <tr id="6">
+                            <td id="61">6</td>
+                            <td id="62"></td>
+                            <td id="63"></td>
+                            <td id="64"></td>
+                            <td id="65"></td>
+                            <td id="66"></td>
+                            <td id="67"></td>
+                        </tr>
+                        <tr id="7">
+                            <td id="71">7</td>
+                            <td id="72"></td>
+                            <td id="73"></td>
+                            <td id="74"></td>
+                            <td id="75"></td>
+                            <td id="76"></td>
+                            <td id="77"></td>
+                        </tr>
+                        <tr id="8">
+                            <td id="81">8</td>
+                            <td id="82"></td>
+                            <td id="83"></td>
+                            <td id="84"></td>
+                            <td id="85"></td>
+                            <td id="86"></td>
+                            <td id="87"></td>
+                        </tr>
+                        <tr id="9">
+                            <td id="91">9</td>
+                            <td id="92"></td>
+                            <td id="93"></td>
+                            <td id="94"></td>
+                            <td id="95"></td>
+                            <td id="96"></td>
+                            <td id="97"></td>
+                        </tr>
+                        <tr id="10">
+                            <td id="101">10</td>
+                            <td id="102"></td>
+                            <td id="103"></td>
+                            <td id="104"></td>
+                            <td id="105"></td>
+                            <td id="106"></td>
+                            <td id="107"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div><br/><br/>
+            <button id="ans">Show Readings</button>
+        </div>
+    </div>
+    <div class="tab-content" id="Simulator">
+        <h1>Simulator</h1>
+        <div id="simulate">       
+            <button class="item-center" id="start"><a href="./checkBack.html">Start Experiment</a></button>
+        </div>
+    </div>
+    <footer>
+        <p1>© Meerut Institute of Engineering & Technology, Meerut</p1>
+        <p>Designed with 💙 by : Hardik Sharma</p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="valve.js"></script>
+</body>
+</html>
